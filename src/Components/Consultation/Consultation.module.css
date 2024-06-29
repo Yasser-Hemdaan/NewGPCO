@@ -1,0 +1,29 @@
+.consultationWrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 550px;
+  margin-block-end: 5vw;
+}
+
+.consultationBody {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.consultationBody .title {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.consultationBody a {
+  width: fit-content;
+  text-transform: uppercase;
+}

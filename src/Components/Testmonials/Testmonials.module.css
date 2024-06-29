@@ -1,0 +1,29 @@
+.testmonialsWrapper {
+  background-color: var(--main-color);
+  margin-block-end: 125px;
+}
+
+.testmonialItem {
+  background-color: white;
+  text-align: start;
+  margin-inline-end: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.testmonialItemInfo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.rating i {
+  color: var(--main-color);
+}
+
+.rating i:last-of-type {
+  color: var(--dark-gray-color);
+}

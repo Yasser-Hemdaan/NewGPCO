@@ -1,0 +1,155 @@
+.hero {
+  min-height: 125px;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .content {
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+
+.content .path {
+  display: flex;
+  gap: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.content .mainTitle {
+  font-size: var(--h1-clamp);
+  font-weight: bold;
+  max-width: 400px !important;
+  width: 50%;
+}
+
+.shape {
+  position: absolute;
+  /* right: -10vw; */
+  width: 50vw;
+  height: 100vw;
+  color: var(--main-color);
+  transform: rotate(-150deg);
+  -webkit-transform: rotate(-150deg);
+  -moz-transform: rotate(-150deg);
+  -ms-transform: rotate(-150deg);
+  -o-transform: rotate(-150deg);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.shape::before {
+  content: "";
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shape::after {
+  content: "";
+  background-image: url(../../../public/pagesHero.png);
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+}
+
+.contactWrapper {
+  overflow: hidden;
+}
+
+.contactBody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactBody .form {
+  text-transform: capitalize;
+  background-color: var(--gray-color);
+  max-width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .contactBody {
+    flex-direction: column-reverse;
+  }
+  .contactBody .form {
+    max-width: 100%;
+  }
+}
+
+.contactBody .form .title {
+  font-weight: bold;
+}
+
+.contactBody .form input:not([type="submit"]),
+.contactBody .form textarea {
+  background-color: white !important;
+  color: var(--gray-color);
+}
+
+.contactBody .form input[type="submit"] {
+  text-transform: capitalize;
+}
+
+.contactBody .getInTouch p {
+  margin: 0;
+}
+
+.contactBody .getInTouch > .title {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.contactBody .getInTouch .info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contactBody .getInTouch .info .data {
+  display: flex;
+}
+
+.contactBody .getInTouch .info .data .title {
+  display: flex;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.contactBody .getInTouch .info .data .dataDetails.locations {
+  display: flex;
+  font-size: 14px;
+}
+
+.contactBody .getInTouch .info .data p {
+  margin-block: 8px;
+}
+
+.map {
+  position: relative;
+  margin-block-end: 5vw;
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.75;
+}

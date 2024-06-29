@@ -1,0 +1,59 @@
+.implementWrapper {
+  background-color: var(--main-color);
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.implementWrapper .shape {
+  position: absolute;
+  top: 0;
+}
+
+.implementWrapper .shape img {
+  width: 100%;
+  height: 100%;
+}
+
+.implementWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../public/cover.png);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.implementBody {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.implementBody h3{
+  font-size: var(--h4-clamp);
+}
+
+.implementBody a {
+  background-color: white !important;
+  color: var(--main-color) !important;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: fontMedium;
+  margin-inline-end: 75px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .implementBody {
+    flex-direction: column;
+    align-items: center;
+  }
+  .implementBody a {
+    margin-inline-end: 0 !important;
+  }
+}
